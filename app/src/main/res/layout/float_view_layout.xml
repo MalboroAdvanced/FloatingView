@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <!--rootview-->
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/root_view">
+
+        <!--collapsedview-->
+        <LinearLayout
+            android:id="@+id/collapsed_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="visible"
+            android:orientation="vertical">
+
+            <!--imageview-->
+
+            <ImageView
+                android:id="@+id/collapsed_bird_imageView"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:src="@drawable/bird"/>
+
+            <!--closebutton-->
+
+            <ImageView
+                android:id="@+id/collapsed_closed_button"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/close_button"
+                android:layout_marginLeft="30dp"/>
+
+        </LinearLayout>
+
+        <!--expandedstate-->
+
+        <LinearLayout
+            android:id="@+id/expanded_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:orientation="horizontal"
+            android:alpha="0.8"
+            android:padding="4dp"
+            android:background="#ff0080">
+
+            <!--lionimage-->
+
+            <ImageView
+                android:id="@+id/lionImage"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/lion"/>
+
+            <!--previous animal button-->
+
+            <ImageView
+                android:id="@+id/btnPrevious"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                android:src="@drawable/previous_button"/>
+
+            <!--leopard video image-->
+
+            <ImageView
+                android:id="@+id/leopardImage"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                android:src="@drawable/leopard"/>
+
+            <!--nextbutton-->
+
+            <ImageView
+                android:id="@+id/btnNext"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                android:src="@drawable/next_button"/>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+
+                <!--closebuttonforexpandedstate-->
+
+                <ImageView
+                    android:id="@+id/close_button_expanded"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/close_button"/>
+
+                <!--openbuttonforexpandedstate-->
+
+                <ImageView
+                    android:id="@+id/open_button"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/open_android"
+                    android:layout_alignParentBottom="true"/>
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</FrameLayout>
